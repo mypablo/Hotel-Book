@@ -1,0 +1,144 @@
+@font-face{
+    font-family: 'RobotoR';
+    font-weight: 400;
+    src: url('assets/fonts/google-fonts/Roboto-Regular.ttf');
+}
+@font-face{
+    font-family: 'RobotoL';
+    font-weight: 300;
+    src: url('assets/fonts/google-fonts/Roboto-Light.ttf');
+}
+
+
+
+
+
+.main-logo{
+    font-family:'RobotoR';
+    font-weight:550;
+    font-size: 19px;
+
+}
+body{
+    font-family: 'RobotoL';
+    font-weight: 300;
+    font-size:19.2px;
+    margin:0;
+    padding:0;
+}
+body > footer{
+    background: #ccc;
+    border-top: 3px solid #808080;
+
+}
+body > footer > p{
+        color: #616161;
+        font-size: 13px;
+        text-align: center;
+        margin: 0;
+        padding: 12px 0;
+}
+body >main{
+    margin:auto;
+}
+
+body>header{
+    box-shadow: 0px 12px 10px -1px rgba(0, 0, 0, 0.53);
+    top: 0px;
+    left: 0;
+    width: 100%;
+    z-index: 99999;
+    position:absolute;
+    background:white;
+
+}
+#top-bar{
+    width:1004px;
+    margin:0 auto;
+    
+    
+    
+}
+.primary-menu{
+    margin:-40px 15px;
+    float:right;
+    color:#f50;
+  
+}
+.hero{
+    
+   
+    background: url(assets/images/dubaiHotel.jpg) no-repeat center center;
+    background-size: 100%;
+    padding: 597px 0 297px 0px;
+
+}
+.city,.RoomType
+{
+    display:inline-block;
+}
+#book-form{
+    background: white;
+    width: 21%;
+    margin: -322px auto;
+    box-sizing: border-box;
+    padding: 12px 0px 12px 73px;
+    border-radius: 3px;
+}
+.city-room{
+    border: 1px solid #c7c7c7;
+    border-radius: 4px;
+    padding: 8px 13px;
+    margin: 5px 0 15px 0;
+    width: 100%;
+    background: #efefef;
+    text-align-last: center;
+    color: #00000085;
+}
+.check-inout{
+  
+   
+    padding: 8px 13px;
+    margin: 0 0 0 -52px;
+    width: 100%;
+    text-align-last: center;
+}
+input[type=text]{
+    border: 1px solid #c7c7c7;
+    border-radius: 4px;
+    padding: 8px 13px;
+    margin: -31px -1px 19px 1px;
+    width: 29.4%;
+    background: #ffffff;
+    text-align-last: center;
+}
+
+input[type=submit]{
+    width: 30%;
+    background: #f50;
+    color: #fff;
+    border-bottom: 1px solid #ca4502;
+    cursor: default;
+    padding: 10px 0px 10px 0px;
+    border-radius: 3px;
+    border: none;
+    margin: -3px 74px 12px 74px;
+}
+
+a,
+a:focus,
+a:active,
+a:visited
+{
+    text-decoration: unset;
+    color:#f50;
+}
+a:hover {
+    color:#616161;    
+}
+
+button,
+input[type="submit"]:hover{
+    color:#fff;
+    background-color:#616161;
+}

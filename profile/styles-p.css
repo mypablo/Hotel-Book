@@ -1,0 +1,148 @@
+@font-face{
+    font-family: 'RobotoR';
+    font-weight: 400;
+    src: url('../assets/fonts/google-fonts/Roboto-Regular.ttf');
+}
+@font-face{
+    font-family: 'RobotoL';
+    font-weight: 300;
+    src: url('../assets/fonts/google-fonts/Roboto-Light.ttf');
+}
+
+.main-logo{
+    font-family: 'RobotoR';
+    font-weight: 550;
+    font-size: 19.2px;
+}
+body{
+    font-family: 'RobotoL';
+    font-weight: 300;
+    font-size: 19.2px;
+}
+body > header{
+    box-shadow: 0px 12px 10px -1px rgba(0, 0, 0, 0.53);
+    top: 0px;
+    left: 0;
+    width: 100%;
+    z-index: 99999;
+    position: absolute;
+    background: white;
+}
+
+#top-bar {
+    width: 1004px;
+    margin: 0 auto;
+}
+.primary-menu {
+    display: inline-flex;
+    margin: -42px 15px;
+    float: right;
+    height: 22px;
+    width: 8%;
+    border-right: 2px dotted #6161619e;
+    font-size: 18px;
+}
+    
+    
+a,
+a:focus,
+a:active,
+a:visited
+{
+    text-decoration: unset;
+    color:#616161;
+}
+
+
+.clear{
+    clear: both;
+}
+
+.Home {
+    text-decoration: unset;
+}
+.i, 
+.fas.fa-home,
+.fas.fa-user{
+    color: #616161;
+}
+.Profile{
+    padding: 0px 4px 0px 24px;
+    float:right;
+}
+
+.Favorite-hotels{
+    color: #f50;
+    padding: 21px;
+    box-shadow: 0 26px 13px 10px rgba(0, 0, 0, 0.21);
+    border-radius: 3px;
+    font-weight: bold;
+    
+}
+
+    
+.mybookings.favorites.reviews{
+    width:1004px;
+    display:flex;
+    justify-content: space-evenly;
+    margin:100px auto;
+    
+
+}
+
+.booking-title{
+    color: white;
+    background: #f50;
+    border-radius: 3px;
+    
+}
+/*.booking-title{
+    left: 700px;
+    display: inline-block;
+    position: relative;
+    bottom: 369px;
+    background: #f50;
+    padding: 7px 0px 7px 300px;
+    color: white;
+    border-radius: 3px;
+    width: 538px;
+    font-weight: bold;
+ 
+}*/
+.rating {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    position: relative;
+    right: 107px;
+    bottom: 21px;
+}
+  
+  .rating > span {
+    display: inline-block;
+    position: relative;
+    width: 1.1em;
+  }
+  .rating > span:hover:before,
+  .rating > span:hover ~ span:before {
+     content: "\2605";
+     position: absolute;
+  }
+
+    
+.my-bookings{
+    font-weight:bold;
+    position:relative;
+   
+}
+footer p{
+    color: #616161;
+    font-size: 13px;
+    text-align: center;
+    margin: 0px 0px 0px -8px;
+    padding: 12px 8px 12px;
+    background: #ccc;
+    border-top: 3px solid #808080;
+    width: 100%;
+    position: relative;
+    top: 517px;
+}

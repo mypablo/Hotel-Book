@@ -1,0 +1,235 @@
+@font-face{
+    font-family: 'RobotoR';
+    font-weight: 400;
+    src: url('../assets/fonts/google-fonts/Roboto-Regular.ttf');
+}
+@font-face{
+    font-family: 'RobotoL';
+    font-weight: 300;
+    src: url('../assets/fonts/google-fonts/Roboto-Light.ttf');
+}
+
+
+.main-logo{
+    font-family: 'RobotoR';
+    font-weight: 550;
+    font-size: 19.2px;
+}
+body{
+    font-family: 'RobotoL';
+    font-weight: 300;
+    font-size: 19.2px;
+}
+body > header{
+    box-shadow: 0px 12px 10px -1px rgba(0, 0, 0, 0.53);
+    top: 0px;
+    left: 0;
+    width: 100%;
+    z-index: 99999;
+    position: absolute;
+    background: white;
+}
+
+#top-bar {
+    width: 1004px;
+    margin: 0 auto;
+}
+.primary-menu {
+    display: inline-flex;
+    margin: -42px 15px;
+    float: right;
+    height: 22px;
+    width: 8%;
+    border-right: 2px dotted #6161619e;
+    font-size: 18px;
+}
+    
+    
+a,
+a:focus,
+a:active,
+a:visited
+{
+    text-decoration: unset;
+    color:#616161;
+}
+
+
+.clear{
+    clear: both;
+}
+
+.Home {
+    text-decoration: unset;
+}
+.i, 
+.fas.fa-home,
+.fas.fa-user{
+    color: #616161;
+}
+.Profile{
+    padding: 0px 4px 0px 24px;
+    float:right;
+}
+.room-title{
+    margin: 76px 377px 0px 425px;
+    border-radius: 4px;
+    background-color: #f50;
+    height: 53px;
+    padding: 0px 21px 0px 21px;
+    color:white;
+    font-weight:bold;
+}
+.hotel-name{
+    display:inline-block;
+
+}
+.hotel-cost{
+    float: right;
+}
+
+.Room-image{
+    opacity: 0.8;
+    padding: 21px 426px;
+}
+
+.guests-class,
+.roomtype-class,
+.parking-class,
+.wifi-class{
+    border-right: 2px dashed;
+    height:58px;
+    margin:12px;
+    
+}
+.guests-class, 
+.roomtype-class, 
+.parking-class, 
+.wifi-class, 
+.pet-class {
+    padding: 0px 61px;
+    
+}
+.guests,
+.room-type,
+.parking,
+.wifi
+{
+    display: -webkit-inline-box;
+    position: relative;
+    bottom: 17px;
+}
+.no-pet{
+    position:relative;
+    bottom:17px;
+}
+
+p.pet{
+    position:relative;
+    bottom:36px;
+}
+
+
+
+.Room-infos{
+ /*   margin: 4px 377px 0px 425px;
+    border-radius: 4px;
+    background-color: #f50;
+    height: 53px;
+    padding: 0px 331px 0px 39px;
+    font-weight: bold;
+    display: inline-flex;
+*/
+    background-color: #f50;
+    color: white;
+    display: inline-flex;
+    text-align: center;
+    margin: 21px 307px 0px 425px;
+    border-radius: 4px;
+    background-color: #f50;
+    height: 84px;
+    
+    color: white;
+    font-weight: bold;
+    
+}    
+/*.pet{
+    display:inline-block;
+    padding: 0px 21px;
+}
+*/
+
+.fas.fa-male,
+.fas.fa-parking,
+.fas.fa-bed,
+.fas.fa-wifi{
+    font-size:23px;
+    display:-webkit-inline-box;
+}
+
+.Room-description{
+    margin: 21px 377px 0px 425px;
+    height: 108px;
+    padding: 0px 0px 0px 21px;
+    border-left: 2px solid red;
+}
+.title-description{
+    font-weight:bold;
+}
+.description{
+    color: #616161;
+}
+.book-button{
+    padding:7px 12px;
+    border-radius:3px;
+    color:white;
+    background: red;
+    float:right;
+    border:none;
+}
+.google-mapLocation{
+    text-align: center;
+    padding: 73px 0px 0px 44px;
+}
+.dashed-line{
+    border-bottom:2px dashed gray;
+    padding: 21px 0px 22px 0px;
+    margin: 4px 376px 41px 422px;
+
+}
+
+.Reviews{
+    padding-bottom:67px;
+}
+.review{
+    margin: 21px 377px 0px 420px;
+    height: 108px;
+    padding: 0px 0px 0px 21px;
+    border-left: 2px solid red;
+}
+.add-reviews{
+    margin: 57px 377px 0px 420px;
+    height: 156px;
+    padding-left:21px;
+    border-left: 2px solid red;
+}
+footer p{
+    color: #616161;
+    font-size: 13px;
+    text-align: center;
+    margin: 0px 0px 0px -8px;
+    padding: 12px 8px 12px;
+    background: #ccc;
+    border-top: 3px solid #808080;
+    width: 100%;
+    position: relative;
+    top: 174px;
+}
+
+
+/* JAVASCRIPT LIBRARIES */
+
+
+.hidden{
+    display:none;
+}
