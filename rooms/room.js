@@ -5,6 +5,8 @@ document.addEventListener("DOMContentLoaded",() => {
    const MAX_ALLOWED_CHARS = 250;
 
 
+
+
    $textarea.addEventListener("input", (e)=>{
        const remainingChars = MAX_ALLOWED_CHARS - e.target.value.length;
 
