@@ -81,10 +81,13 @@
                 aria-hidden="false" tabindex="0"></iframe>
             </div>
             <div class="dashed-line"></div>
+            
             <section class="Reviews">
                 <div class="review">
                     <p> Reviews</p>
+                    <div id="added-Review"><p></p></div>
                 </div>
+                <form method="get">
                 <div class="add-reviews">
                     <p class="addreview-title">Add review</p>
                     <div class="star-review">
@@ -95,18 +98,18 @@
                     <i class="fas fa-star" style="color:#cbcbcbb8"></i>
                     </div>
                     <div id="textID" class="text-review">
-                    <textarea placeholder="Write here your review" rows="3" cols="150" ></textarea>
+                    <textarea id="textarea-Review" placeholder="Write here your review" rows="3" cols="150" ></textarea>
                     </div>
                     <div id="textError" style="color:red" >Παρακαλώ εισάγετε λιγότερους χαρακτήρες</div>
                         <div>Χαρακτήρες που απομένουν: <mark id="RemainingChars">250</mark></div>
-                        <div id="submit">
-                            <input class="submit-button" type="button"  value="Submit">
+                        <div class="submit">
+                            <input id="submit-button" type="button"  value="Submit">
                         </div>
                     
                 </div>
                 
             </section>
-
+                </form>
 
 
         </main>
