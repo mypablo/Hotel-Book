@@ -6,8 +6,8 @@ document.addEventListener("DOMContentLoaded",() => {
 
    const $addedreview = document.querySelector("#added-Review");
    const $textareaRev = document.querySelector("#textarea-Review")
-   const $submitBtn = document.querySelector("#submit-button");
-   const $form = document.getElementById("form");
+   //const $submitBtn = document.querySelector("#submit-button");
+   //const $form = document.getElementById("form");
 
    
 //  TEXT AREA MAX CHARS && WARNING BAR
@@ -30,17 +30,31 @@ document.addEventListener("DOMContentLoaded",() => {
 
 
 
-   
-    $submitBtn.addEventListener("click", (e)=>{
+//    //
+//     $submitBtn.addEventListener("click", (e)=>{
 
-        $addedreview.innerHTML = $textareaRev.value;
+//         $addedreview.innerHTML = $textareaRev.value;
     
-      console.log($textareaRev.value);
+//       console.log($textareaRev.value);
+
+//       if($addedreview.innerText.length >0){
+//           const newP = document.createElement("p");
+//           document.getElementById("added-Review").appendChild(newP);
+          
+//       }
 
       
    
   
-   })
+//    })
+
+   $(function() {
+    $('#example').barrating({
+      theme: 'fontawesome-stars-o',
+      //readonly: true,
+     // showSelectedRating:false
+    });
+ });
    
 
   

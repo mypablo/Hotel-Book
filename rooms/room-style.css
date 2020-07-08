@@ -179,13 +179,17 @@ p.pet{
 .description{
     color: #616161;
 }
-.submit-button{
+#submit-button{
     padding: 7px 12px;
     border-radius: 3px;
     color: white;
     background: red;
-    float: right;
+    cursor:pointer;
+    
 } 
+.submit{
+    text-align:center;
+}
 .book-button
  {
     padding:7px 12px;
