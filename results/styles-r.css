@@ -115,7 +115,7 @@ a:visited
     padding-bottom:1px;
 }
 .border-left-solid{
-    border-left:1.5px #f50 solid;
+    border: left 1.5;px #f50 solid;
     
 }
 .room-infos{
