@@ -1,7 +1,9 @@
 <?php
 
     require 'php/connect.php';
-    $sql = 'SELECT DISTINCT city FROM room';
+    $sqlcity = 'SELECT DISTINCT city FROM room';
+    $sqlRoomType = 'SELECT title FROM room_type';
+    $sqlCheckInOut = 'SELECT check_in_date, check_out_date FROM booking';
     
 
 ?>
@@ -14,6 +16,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="assets/fonts/icons/css/all.css" rel="stylesheet">
         <link href="style.css" type="text/css" rel="stylesheet"/>
+        <script src="js/datepicker.js"></script>
+        
+        
     </head>
     <body>
         <header>
@@ -27,12 +32,12 @@
         </header>
         <main class="main-content view_hotel page-home">
             <section class="hero">
-                <form method="GET" action="index.php">
+                <form method="GET" action="results/results.php">
                 <div id="book-form">     
                     <div class="city">
                         <select class="city-room">
                         <?php
-                            foreach ($pdo->query($sql) as $row){?>
+                            foreach ($pdo->query($sqlcity) as $row){?>
                             
                         <option value="null" hidden selected>City</option>
                         <option><?php print $row['city']?></option>
@@ -44,9 +49,13 @@
                     </div>
                     <div class="RoomType">
                         <select class="city-room">
-                            <option value="null" selected>Room Type</option>
-                            <option value="Suite">Suite</option>
-                            <option value="Deluxe Suite">Deluxe Suite</option>
+                            <option value="null" hidden selected>Room Type</option>
+                            <?php 
+                                foreach ($pdo->query($sqlRoomType) as $row2){?>
+                            <option><?php print $row2 ['title']  ?></option>
+                            <!-- <option value="Suite">Suite</option>
+                            <option value="Deluxe Suite">Deluxe Suite</option> -->
+                            <?php }?>
                         </select>
                     </div>
                     <div class="check-inout">
@@ -64,5 +73,6 @@
         <footer>
             <p>© CollegeLink 2020</p>
         </footer>
+        
     </body>
 </html>
