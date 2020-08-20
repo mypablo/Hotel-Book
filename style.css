@@ -88,8 +88,8 @@ body>header{
 .city-room{
     border: 1px solid #c7c7c7;
     border-radius: 4px;
-    padding: 8px 13px;
-    margin: 5px 0 15px 0;
+    padding: 10px 12px;
+    margin: 12px -1px 12px -3px;
     width: 100%;
     background: #efefef;
     text-align-last: center;
