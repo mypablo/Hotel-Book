@@ -16,11 +16,25 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="assets/fonts/icons/css/all.css" rel="stylesheet">
         <link href="style.css" type="text/css" rel="stylesheet"/>
-        <script src="js/datepicker.js"></script>
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="/resources/demos/style.css">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script>
+            $( function() {
+            $( "#datepicker" ).datepicker();
+                } );
+            
+                $( function() {
+            $( "#datepicker2" ).datepicker();
+                } );
+        </script>
         
         
     </head>
+   
     <body>
+    
         <header>
             <div id="top-bar">
                 <p class="main-logo">Hotels</p>
@@ -59,8 +73,8 @@
                         </select>
                     </div>
                     <div class="check-inout">
-                        <input type="text" id="checkin" size="12.9" placeholder="Check-in Date">
-                        <input type="text" id="checkout" size="12.9" placeholder="Check-out Date">
+                        <input type="text" id="datepicker" size="12.9" placeholder="Check-in Date">
+                        <input type="text" id="datepicker2" size="12.9" placeholder="Check-out Date">
                     </div>
                     <div class="Search-Button">
                         <input type="submit" value="Search" id="search-submit">
