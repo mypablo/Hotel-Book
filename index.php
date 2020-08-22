@@ -20,19 +20,19 @@
         <link rel="stylesheet" href="/resources/demos/style.css">
         <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-        <script>
-            $( function() {
-            $( "#datepicker" ).datepicker();
-                } );
-            
-                $( function() {
-            $( "#datepicker2" ).datepicker();
-                } );
-        </script>
         
         
     </head>
-   
+        <script>
+                $( function() {
+                $( "#datepicker" ).datepicker();
+                     } );
+                    
+                    $( function() {
+                $( "#datepicker2" ).datepicker();
+                    } );
+        </script>
+                
     <body>
     
         <header>
@@ -46,7 +46,7 @@
         </header>
         <main class="main-content view_hotel page-home">
             <section class="hero">
-                <form method="GET" action="results/results.php">
+                <form method="POST" action="results/results.php">
                 <div id="book-form">     
                     <div class="city">
                         <select class="city-room">
@@ -73,8 +73,8 @@
                         </select>
                     </div>
                     <div class="check-inout">
-                        <input type="text" id="datepicker" size="12.9" placeholder="Check-in Date">
-                        <input type="text" id="datepicker2" size="12.9" placeholder="Check-out Date">
+                        <input type="text" id="datepicker" size="12.9" placeholder="Check-in Date" readonly="readonly">
+                        <input type="text" id="datepicker2" size="12.9" placeholder="Check-out Date"readonly="readonly">
                     </div>
                     <div class="Search-Button">
                         <input type="submit" value="Search" id="search-submit">
