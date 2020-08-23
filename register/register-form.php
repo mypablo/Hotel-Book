@@ -55,7 +55,7 @@ if(isset($_POST['register'])){
     $result = $stmt->execute();
    
     if($result){
-        //What you do here is up to you!
+        
         echo 'Thank you for registering with our website.';
     }
     

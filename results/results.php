@@ -1,6 +1,30 @@
 <?php
 
-    require '../php/connect.php'
+        // require '../php/connect.php';
+        // require '../php/Room-Search.php';
+
+        
+        // use roomSearch\Room;
+        // $room = new Room;
+
+        // $city = $_GET['city'];
+        // $typeId = $_GET['roomtype'];
+        // $checkInDate = $_GET['checkIn'];
+        // $checkOutDate = $_GET['checkOut'];
+
+        // $allAvailableRooms = $room->search(new Datetime($checkInDate), new DateTime($checkOutDate),$city, $typeId);
+
+        
+
+        
+        
+       
+        
+        
+    
+    
+    
+    
 
 ?>
 <!DOCTYPE html>
@@ -108,12 +132,30 @@
                 <div class="border-left-solid">
                 <div class="room-infos">
                 <p class="room-title">HILTON HOTEL</p>
-                <p class="room-location">ATHENS, ZWGRAFOU</p>
+                <p class="room-location">
+                <?php
+                    if (isset($_POST['city'])) {
+                        // SEARCH FOR USERS
+                        require "../php/search.php";
+
+                        // DISPLAY RESULTS
+                        if (count($results) > 0) {
+                            foreach ($results as $r) {
+                            echo ' <p class="room-location">'.$r['city'] .'</p>'  ;
+                            // printf("<p class="room-location">[%s] </p>," $r['city']);
+                            }
+                        } else {
+                            echo "No results found";
+                        }
+                    }
+    ?>
+                </p>
                 <p class="room-description">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 <input type="button" class="goTO" value="Go to Room Page">
                 </div>
+                  
             </div>
 
             </section>
@@ -126,7 +168,8 @@
             </section>
             
 
-
+          
+         
             
         </main>
         <footer>

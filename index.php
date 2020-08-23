@@ -46,10 +46,10 @@
         </header>
         <main class="main-content view_hotel page-home">
             <section class="hero">
-                <form method="POST" action="results/results.php">
+                <form method="post" action="results/results.php">
                 <div id="book-form">     
                     <div class="city">
-                        <select class="city-room">
+                        <select class="city-room" name="city">
                         <?php
                             foreach ($pdo->query($sqlcity) as $row){?>
                             
@@ -61,23 +61,23 @@
                             <?php }?>
                         </select>   
                     </div>
-                    <div class="RoomType">
-                        <select class="city-room">
+                    <div class="RoomType" name="roomType">
+                        <select class="city-room" name="roomtype">
                             <option value="null" hidden selected>Room Type</option>
                             <?php 
                                 foreach ($pdo->query($sqlRoomType) as $row2){?>
-                            <option><?php print $row2 ['title']  ?></option>
+                            <option><?php print $row2 ['title'];  ?></option>
                             <!-- <option value="Suite">Suite</option>
                             <option value="Deluxe Suite">Deluxe Suite</option> -->
                             <?php }?>
                         </select>
                     </div>
                     <div class="check-inout">
-                        <input type="text" id="datepicker" size="12.9" placeholder="Check-in Date" readonly="readonly">
-                        <input type="text" id="datepicker2" size="12.9" placeholder="Check-out Date"readonly="readonly">
+                        <input type="text" name="checkIn" id="datepicker" size="12.9" placeholder="Check-in Date" readonly="readonly">
+                        <input type="text" name="checkOut" id="datepicker2" size="12.9" placeholder="Check-out Date"readonly="readonly">
                     </div>
                     <div class="Search-Button">
-                        <input type="submit" value="Search" id="search-submit">
+                        <input type="submit" name="go" value="Search" id="search-submit">
                     </div>
                 </div>
                     
