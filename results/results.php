@@ -127,13 +127,27 @@
             </section>
             <section class="search-results">
             <div class="my-searches"><p>Search Results</p></div>
-            <section class="room-1">
-                <div class="img-left"></div>
+            <!-- <section class="room-1">
+                <div class="img-left" src="../assets/images/room-1.jpg"></div>
                 <div class="border-left-solid">
-                <div class="room-infos">
+                <div class="room-infos"></div>
                 <p class="room-title">HILTON HOTEL</p>
                 <p class="room-location">
-                <?php
+                
+                </p>
+                <p class="room-description">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <input type="button" class="goTO" value="Go to Room Page">
+                </div>
+                
+                  
+            
+
+            </section> -->
+
+            
+            <?php
                     if (isset($_POST['city'])) {
                         // SEARCH FOR USERS
                         require "../php/search.php";
@@ -141,7 +155,19 @@
                         // DISPLAY RESULTS
                         if (count($results) > 0) {
                             foreach ($results as $r) {
-                            echo ' <p class="room-location">'.$r['city'] .'</p>'  ;
+                            echo '<section class="room-1">
+                                <div class="img-left" ><img src="../assets/images/'.$r['photo_url'].'"width="150" height="150 ></div>
+                                <div class="border-left-solid">
+                                <div class="room-infos">
+                                <p class="room-title">'.$r['name'].'</p>
+                             <p class="room-location">'.$r['city'] .'</p>
+                             <p class="room-description">'.$r['description_short'].'</p>
+                         <input type="button" class="goTO" value="Go to Room Page">
+                         </div>
+                           
+                     </div>
+         
+                     </section>'  ;
                             // printf("<p class="room-location">[%s] </p>," $r['city']);
                             }
                         } else {
@@ -149,19 +175,6 @@
                         }
                     }
     ?>
-                </p>
-                <p class="room-description">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <input type="button" class="goTO" value="Go to Room Page">
-                </div>
-                  
-            </div>
-
-            </section>
-
-            
-            
 
                 
            

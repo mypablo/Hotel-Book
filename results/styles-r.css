@@ -94,6 +94,9 @@ a:visited
 }
 
 
+.img-left {
+    display: -webkit-inline-box;
+}
 
 .search-results{
     left: 620px;
@@ -127,17 +130,18 @@ a:visited
 .room-1{
     display: flex;
     position: relative;
-    bottom: 525px;
-    right: 76px;
-    padding: 7px 0px 7px 300px;
+    bottom: 480px;
+    right: 149px;
+    padding: 11px 0px 7px 79px;
     color: black;
     border-radius: 3px;
-    width: 538px;
-    margin: -1px 0px 0px -164px;
-    font-weight:bold;
+    width: 561px;
+    margin: -1px 0px 0px -167px;
+    font-weight: bold;
+}
     
 
-}
+
 
     
 
