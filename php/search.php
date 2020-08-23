@@ -21,7 +21,7 @@ try {
 
 // (3) SEARCH
 
-$stmt = $pdo->prepare("SELECT * FROM room WHERE city LIKE ?");
-$stmt->execute(["%" . $_POST['city'] . "%"]);
+$stmt = $pdo->prepare("SELECT * FROM room WHERE city LIKE ? OR type_id LIKE ?");
+$stmt->execute(["%" . $_POST['city'] . "%","%" . $_POST['roomtype'] . "%"]);
 $results = $stmt->fetchAll();
 if (isset($_POST['ajax'])) { echo json_encode($results); }

@@ -168,7 +168,7 @@
                      </div>
          
                      </section>'  ;
-                            // printf("<p class="room-location">[%s] </p>," $r['city']);
+                            
                             }
                         } else {
                             echo "No results found";
