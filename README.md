@@ -1,5 +1,5 @@
-# Web Development Academy by Collegelink.gr 
-# ( WDA - Booking Hotel System )
+# Web Development Academy by Collegelink.gr :boom: :fire:
+# ( WDA - Booking Hotel System )  :running: :thought_balloon:
 
 The above files are a website for booking a hotel.
 
